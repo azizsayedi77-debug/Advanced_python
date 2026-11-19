@@ -1,13 +1,13 @@
 import cv2
-image=cv2.imread("renard.png")
+image=cv2.imread("renard.jpg")
 
 if image is None:
  print("image intouvable")
 
 else:
- gris=cv2.cvtcolor(image,cv2.COLOR_BGR2GRAY)
+ gris = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
  cv2.imshow("originale",image)
  cv2.imshow("niveau de gris",gris)
- cv2.waitkey(0)
+ cv2.waitKey(0)
 
- cv2.destroyAlWindows()
+cv2.destroyAllWindows()
