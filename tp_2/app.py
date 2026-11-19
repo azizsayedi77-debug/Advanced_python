@@ -1,5 +1,5 @@
 import cv2
- image=cv2.imread("renard.png")
+image=cv2.imread("renard.png")
 
 if image is None:
  print("image intouvable")
